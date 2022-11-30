@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <h1>Random Password Generator</h1>
+    <div class="container">
+        <form action="#">
+            <label class="formHeading">Generated Password</label>
+            
+            <input type="text" id="generatedPassword">
+            <p id="viewPassword">Show Password <span><input type="checkbox" name="showPassword" id="showPassword"></span> </p>
+            
+            <p id="copied">Password copied to clipboard</p>
+
+            <label for="text" class="labelForSizeOfPassword">Size of password <span><input type="number" name="size"  value='' id="sizeOfPassword"></span></label>
+            <label for="input" class="passwordType">Strong Password <span><input type="radio" name="passwordType" value="strongPassword" class="passwordType"></span></label>
+
+            <label for="input" class="passwordType">Normal Password<span><input type="radio" name="passwordType" value="normalPassword" class="passwordType"></span></label> 
+            
+            <button id="btn2" type="button" class="btn">Copy Password</button>
+            <button type="button" id="btn" class="btn">Generate Password</button>
+            
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
